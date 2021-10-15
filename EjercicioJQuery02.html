@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Este style esta puesto para pruebas, NO PONER como norma general -->
+<style>
+ .Clase02{
+     background-color: blueviolet;
+ }
+</style>
+
+<body>
+    <input type="button" value="Ejemplo JQuery 02" onclick="borrar2()"/>
+    <p id="parrafo01">Esto es el parrafo 1</p>
+    <p id="parrafo02" class="Clase02">Esto es el parrafo 2</p>
+    <p id="parrafo03">Esto es el parrafo 3</p>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        function borrar2(){
+            //En caso de querer que el script funcione en varios elementos, se puede usar la etiqueta P en vez de la ID "parrafo"
+            //$('#p').fadeToggle('slow')
+
+            // $('#parrafo01').fadeToggle('slow')
+            // $('#parrafo02').fadeToggle('slow')
+            // $('#parrafo03').fadeToggle('slow')
+
+            ~$('#.Clase02').fadeToggle(1400)
+            
+        }
+    </script>
+
+</body>
+</html>
