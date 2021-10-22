@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/jquery-ui.min.css">
+  </head>
+  <body>
+    <div id="Fecha"></div>
+
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/jquery-ui.min.js"></script>
+    <script>
+      $('#Fecha').datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "-55:+55",
+        dateFormat: "D mm yy",
+        fisrtDay: 1,
+        currentText: "hoy",
+        showButtonPanel: true,
+        monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+        dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+        dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+        weekHeader: 'Sm',
+      });
+    </script>
+  </body>
+</html>
