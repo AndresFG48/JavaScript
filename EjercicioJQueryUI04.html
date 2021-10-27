@@ -27,7 +27,17 @@
         dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
         dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
         weekHeader: 'Sm',
+
+        showWeek: true,
+        onSelect: function(){
+          var fecha = $('#Fecha').datepicker('getDate')
+          // alert(fecha.getDate())
+          alert(' DIA: '+ fecha.getDate() +
+          ' MES: '+ fecha.getMonth() + 1) +
+          ' AÑO: '+ fecha.getFullYear()
+        }
       });
+      
     </script>
   </body>
 </html>
