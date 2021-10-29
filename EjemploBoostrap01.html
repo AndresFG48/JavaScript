@@ -6,10 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            .col {
+                background-color: rgba(86, 81, 124, .15);
+                border: 1px solid rgba(86, 81, 124, .2);
+            }
+        </style>
     </head>
     <body>
         <div class="alert alert-success">
             HOLA BOOSTRAP
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">1 de 3</div>
+                <div class="col">2 de 3</div>
+                <div class="col">3 de 3</div>
+            </div>
+
+            <div class="row">
+                <div class="col">1 de 3</div>
+                <div class="col">2 de 2</div>
+            </div>
+
+            <div class="row">
+                <div class="col">1 de 3</div>
+                <div class="col-5 offset-2 col" style="background-color: tomato;">2 de 3</div>
+                <div class="col">3 de 3</div>
+            </div>
+
+            <div class="row">
+                <div class="d-xs-none" style="background-color: powderblue;">en PC</div>
+                <div class="d-lg-none d-md-none d-sm-none col-xs-10" style="background-color: yellowgreen;">en movil</div>
+            </div>
         </div>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
